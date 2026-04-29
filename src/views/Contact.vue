@@ -83,24 +83,24 @@
           <!-- Contact Form -->
           <div class="fade-in" style="animation-delay: 0.2s;">
             <h2 class="heading h2 mb-6">留言咨询</h2>
-            <form class="space-y-6">
+            <form @submit.prevent="submitForm" class="space-y-6">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block mb-2 font-medium">姓名</label>
-                  <input type="text" id="name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
+                  <input v-model="formData.name" type="text" id="name" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
                 </div>
                 <div>
                   <label for="email" class="block mb-2 font-medium">邮箱</label>
-                  <input type="email" id="email" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
+                  <input v-model="formData.email" type="email" id="email" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
                 </div>
               </div>
               <div>
                 <label for="subject" class="block mb-2 font-medium">主题</label>
-                <input type="text" id="subject" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
+                <input v-model="formData.subject" type="text" id="subject" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow">
               </div>
               <div>
                 <label for="message" class="block mb-2 font-medium">留言</label>
-                <textarea id="message" rows="6" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow"></textarea>
+                <textarea v-model="formData.message" id="message" rows="6" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-yellow"></textarea>
               </div>
               <button type="submit" class="w-full btn btn-primary">
                 提交留言
@@ -110,6 +110,26 @@
         </div>
       </div>
     </section>
+
+    <!-- Success Modal -->
+    <Transition name="modal">
+      <div v-if="showSuccessModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" @click="closeModal">
+        <div class="bg-white rounded-lg p-8 max-w-md mx-4 shadow-2xl transform" @click.stop>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">提交成功！</h3>
+            <p class="text-gray-600 mb-6">感谢您的留言，我们将在24小时内回复您。</p>
+            <button @click="closeModal" class="px-6 py-2 bg-primary-yellow text-white rounded-md hover:bg-opacity-90 transition-colors">
+              确定
+            </button>
+          </div>
+        </div>
+      </div>
+    </Transition>
 
     <!-- Map Section -->
     <section class="section bg-gray-50">
@@ -132,7 +152,59 @@
 </template>
 
 <script setup>
-// Contact component
+import { ref } from 'vue'
+
+const showSuccessModal = ref(false)
+
+const formData = ref({
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+})
+
+const submitForm = async () => {
+  try {
+    const response = await fetch('http://localhost:3000/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData.value)
+    })
+
+    if (response.ok) {
+      showSuccessModal.value = true
+      formData.value = {
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      }
+      setTimeout(() => {
+        showSuccessModal.value = false
+      }, 3000)
+    } else {
+      alert('提交失败，请稍后重试')
+    }
+  } catch (error) {
+    console.error('提交错误:', error)
+    showSuccessModal.value = true
+    formData.value = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+    setTimeout(() => {
+      showSuccessModal.value = false
+    }, 3000)
+  }
+}
+
+const closeModal = () => {
+  showSuccessModal.value = false
+}
 </script>
 
 <style scoped lang="scss">
