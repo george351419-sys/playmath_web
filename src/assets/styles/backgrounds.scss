@@ -1,0 +1,89 @@
+// 背景样式
+
+.bg-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/MR508901.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/MR508828.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-exhibition {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/展览入口.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-products {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/MR508901.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-faq {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/MR508971.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/picture/MR509227.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// 背景叠加效果
+.bg-overlay {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// 背景模糊效果
+.bg-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+// 背景渐变
+.bg-gradient-primary {
+  background: linear-gradient(135deg, $primary-yellow 0%, $primary-orange 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, $secondary-blue 0%, #0066CC 100%);
+}
+
+// 响应式背景
+@media (max-width: $breakpoint-md) {
+  .bg-home,
+  .bg-about,
+  .bg-exhibition,
+  .bg-products,
+  .bg-faq,
+  .bg-contact {
+    background-attachment: scroll;
+  }
+}
