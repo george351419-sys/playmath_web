@@ -1,10 +1,10 @@
 <template>
   <div class="exhibition">
     <!-- Hero Section -->
-    <section class="bg-exhibition bg-overlay text-white py-24">
+    <section class="bg-exhibition bg-overlay text-white py-16 md:py-24">
       <div class="container mx-auto px-4 text-center">
-        <h1 class="heading h1 mb-6 fade-in">数学展</h1>
-        <p class="text-xl mb-8 fade-in" style="animation-delay: 0.2s;">
+        <h1 class="heading h1 mb-4 md:mb-6 fade-in">数学展</h1>
+        <p class="text-lg md:text-xl mb-6 md:mb-8 fade-in" style="animation-delay: 0.2s;">
           爱丽丝漫游数学王国
         </p>
       </div>
@@ -13,43 +13,43 @@
     <!-- Exhibition Introduction -->
     <section class="section bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="heading h2 text-center mb-12">展览介绍</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <h2 class="heading h2 text-center mb-8 md:mb-12">展览介绍</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div class="fade-in">
-            <img src="/picture/展览门头.jpg" alt="爱丽丝漫游数学王国" class="rounded-lg shadow-lg w-full h-[400px] object-cover">
+            <img src="/picture/展览门头.jpg" alt="爱丽丝漫游数学王国" class="rounded-lg shadow-lg w-full h-48 sm:h-64 lg:h-[400px] object-cover">
           </div>
           <div class="fade-in" style="animation-delay: 0.2s;">
-            <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+            <p class="text-gray-600 text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
               你有没有想过，如果爱丽丝掉进兔子洞时，手里拿着一本数学书，会发生什么奇妙的事情？<br><br>
               "爱丽丝漫游数学王国"将经典童话故事与数学探索完美融合，带来一场前所未有的沉浸式数学体验。<br><br>
               我们将跟随爱丽丝的脚步，通过互动装置、艺术创作和游戏挑战，发现数学的乐趣与奥秘。
             </p>
-            <div class="flex flex-wrap gap-3 mb-6">
-              <span class="px-4 py-2 bg-primary-yellow text-dark rounded-full text-sm font-medium shadow-sm">
+            <div class="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+              <span class="px-3 py-1.5 md:px-4 md:py-2 bg-primary-yellow text-dark rounded-full text-xs md:text-sm font-medium shadow-sm">
                 儿童友好
               </span>
-              <span class="px-4 py-2 bg-secondary-blue text-white rounded-full text-sm font-medium shadow-sm">
+              <span class="px-3 py-1.5 md:px-4 md:py-2 bg-secondary-blue text-white rounded-full text-xs md:text-sm font-medium shadow-sm">
                 互动体验
               </span>
-              <span class="px-4 py-2 bg-accent-green text-white rounded-full text-sm font-medium shadow-sm">
+              <span class="px-3 py-1.5 md:px-4 md:py-2 bg-accent-green text-white rounded-full text-xs md:text-sm font-medium shadow-sm">
                 教育价值
               </span>
-              <span class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-sm font-medium shadow-sm">
+              <span class="px-3 py-1.5 md:px-4 md:py-2 bg-gray-200 text-gray-800 rounded-full text-xs md:text-sm font-medium shadow-sm">
                 故事化设计
               </span>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-blue-200">
-                <p class="text-4xl font-bold text-secondary-blue mb-2">8+</p>
-                <p class="text-gray-600 text-sm">主题展区</p>
+            <div class="grid grid-cols-3 gap-3 md:gap-4">
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-3 md:p-6 text-center hover:shadow-lg transition-all border border-blue-200">
+                <p class="text-2xl md:text-4xl font-bold text-secondary-blue mb-1 md:mb-2">8+</p>
+                <p class="text-gray-600 text-xs md:text-sm">主题展区</p>
               </div>
-              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-blue-200">
-                <p class="text-4xl font-bold text-secondary-blue mb-2">50+</p>
-                <p class="text-gray-600 text-sm">互动装置</p>
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-3 md:p-6 text-center hover:shadow-lg transition-all border border-blue-200">
+                <p class="text-2xl md:text-4xl font-bold text-secondary-blue mb-1 md:mb-2">50+</p>
+                <p class="text-gray-600 text-xs md:text-sm">互动装置</p>
               </div>
-              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-blue-200">
-                <p class="text-4xl font-bold text-secondary-blue mb-2">3岁+</p>
-                <p class="text-gray-600 text-sm">适龄儿童</p>
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-3 md:p-6 text-center hover:shadow-lg transition-all border border-blue-200">
+                <p class="text-2xl md:text-4xl font-bold text-secondary-blue mb-1 md:mb-2">3岁+</p>
+                <p class="text-gray-600 text-xs md:text-sm">适龄儿童</p>
               </div>
             </div>
           </div>
@@ -60,71 +60,71 @@
     <!-- exhibition Highlights -->
     <section class="section bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="heading h2 text-center mb-12">展览亮点</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <h2 class="heading h2 text-center mb-8 md:mb-12">展览亮点</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">儿童友好的数学艺术展</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">儿童友好的数学艺术展</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               符合儿童认知发展规律，循序渐进，启发式提问
             </p>
           </div>
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">故事情景导入</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">故事情景导入</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               通过爱丽丝梦游仙境的故事背景，将数学概念融入故事情节
             </p>
           </div>
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">沉浸式体验</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">沉浸式体验</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               全感官沉浸式解密，让数学可以看得到
             </p>
           </div>
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">互动式体验</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">互动式体验</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               多种互动道具，让数学可以摸得到
             </p>
           </div>
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">基于七个核心数学概念</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">基于七个核心数学概念</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               集合、数感、图形、测量、空间关系、模式、数据分析
             </p>
           </div>
-          <div class="card p-6 hover:shadow-lg transition-all">
-            <div class="w-16 h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card p-5 md:p-6 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-primary-yellow rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+              <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="heading h4 mb-3 text-center">打卡拍照</h3>
-            <p class="text-gray-600 text-center">
+            <h3 class="heading h4 mb-2 md:mb-3 text-center">打卡拍照</h3>
+            <p class="text-gray-600 text-center text-sm md:text-base">
               艺术家×数学家联手造梦，打卡会发光的巨型蘑菇等特色场景
             </p>
           </div>
@@ -135,83 +135,83 @@
     <!-- Exhibition Zones -->
     <section class="section bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="heading h2 text-center mb-12">核心展区</h2>
+        <h2 class="heading h2 text-center mb-8 md:mb-12">核心展区</h2>
 
         <!-- Logic Gate Zone -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
-          <div class="fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-12 md:mb-16">
+          <div class="fade-in order-2 md:order-1">
             <div class="relative overflow-hidden rounded-lg shadow-lg">
               <div class="carousel-container flex transition-transform duration-500 ease-in-out" :ref="(el) => setCarouselRef(el, 'LogicGate')" data-current="0">
                 <div class="carousel-item min-w-full">
-                  <img src="/picture/展览入口.jpg" alt="逻辑之门" class="w-full h-80 object-cover">
+                  <img src="/picture/展览入口.jpg" alt="逻辑之门" class="w-full h-48 sm:h-64 md:h-80 object-cover">
                 </div>
               </div>
-              <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition-all" @click="prevSlide('LogicGate')">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <button class="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1.5 md:p-2 hover:bg-opacity-100 transition-all" @click="prevSlide('LogicGate')">
+                <svg class="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
               </button>
-              <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition-all" @click="nextSlide('LogicGate')">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <button class="absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1.5 md:p-2 hover:bg-opacity-100 transition-all" @click="nextSlide('LogicGate')">
+                <svg class="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
-              <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" @click="goToSlide('LogicGate', 0)"></button>
+              <div class="absolute bottom-3 md:bottom-4 left-0 right-0 flex justify-center space-x-2">
+                <button class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" @click="goToSlide('LogicGate', 0)"></button>
               </div>
             </div>
           </div>
-          <div class="fade-in" style="animation-delay: 0.2s;">
-            <h3 class="heading h3 mb-4">逻辑之门</h3>
-            <p class="text-gray-600 mb-4">
+          <div class="fade-in order-1 md:order-2" style="animation-delay: 0.2s;">
+            <h3 class="heading h3 mb-3 md:mb-4">逻辑之门</h3>
+            <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
               选择你的数学冒险之门，左边是通往"宏大数学世界"的大门，右边是通向"奇妙数学乐园"的小门。
               猜猜爱丽丝选了哪扇门，她可能会遇到什么呢？
             </p>
-            <div class="flex flex-wrap gap-3 mb-6">
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">逻辑推理</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">选择互动</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">故事导入</span>
+            <div class="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">逻辑推理</span>
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">选择互动</span>
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">故事导入</span>
             </div>
           </div>
         </div>
 
         <!-- Mushroom Garden Zone -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-12 md:mb-16">
           <div class="fade-in order-2 md:order-1" style="animation-delay: 0.2s;">
-            <h3 class="heading h3 mb-4">奇偶蘑菇园</h3>
-            <p class="text-gray-600 mb-4">
+            <h3 class="heading h3 mb-3 md:mb-4">奇偶蘑菇园</h3>
+            <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
               通过蘑菇上白点数量，了解奇数和偶数的概念。在蘑菇园里破解奇偶数密码，
               体验数学的乐趣。
             </p>
-            <div class="flex flex-wrap gap-3 mb-6">
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">数字启蒙</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">游戏体验</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">视觉效果</span>
+            <div class="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">数字启蒙</span>
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">游戏体验</span>
+              <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-100 text-gray-800 rounded-full text-xs md:text-sm">视觉效果</span>
             </div>
           </div>
           <div class="fade-in order-1 md:order-2">
             <div class="relative overflow-hidden rounded-lg shadow-lg">
               <div class="carousel-container flex transition-transform duration-500 ease-in-out" :ref="(el) => setCarouselRef(el, 'Mushroom')" data-current="0">
                 <div class="carousel-item min-w-full">
-                  <img src="/picture/奇偶数蘑菇园1.jpg" alt="奇偶蘑菇园" class="w-full h-80 object-cover">
+                  <img src="/picture/奇偶数蘑菇园1.jpg" alt="奇偶蘑菇园" class="w-full h-48 sm:h-64 md:h-80 object-cover">
                 </div>
                 <div class="carousel-item min-w-full">
-                  <img src="/picture/奇偶数蘑菇园2.jpg" alt="奇偶蘑菇园" class="w-full h-80 object-cover">
+                  <img src="/picture/奇偶数蘑菇园2.jpg" alt="奇偶蘑菇园" class="w-full h-48 sm:h-64 md:h-80 object-cover">
                 </div>
               </div>
-              <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition-all" @click="prevSlide('Mushroom')">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <button class="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1.5 md:p-2 hover:bg-opacity-100 transition-all" @click="prevSlide('Mushroom')">
+                <svg class="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
               </button>
-              <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 hover:bg-opacity-100 transition-all" @click="nextSlide('Mushroom')">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <button class="absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1.5 md:p-2 hover:bg-opacity-100 transition-all" @click="nextSlide('Mushroom')">
+                <svg class="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
-              <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-                <button class="w-3 h-3 rounded-full bg-white bg-opacity-100 transition-all" @click="goToSlide('Mushroom', 0)"></button>
-                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" @click="goToSlide('Mushroom', 1)"></button>
+              <div class="absolute bottom-3 md:bottom-4 left-0 right-0 flex justify-center space-x-2">
+                <button class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white bg-opacity-100 transition-all" @click="goToSlide('Mushroom', 0)"></button>
+                <button class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" @click="goToSlide('Mushroom', 1)"></button>
               </div>
             </div>
           </div>

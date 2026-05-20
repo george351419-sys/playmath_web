@@ -1,19 +1,17 @@
 <template>
-  <footer class="bg-gray-900 text-white py-12">
+  <footer class="bg-gray-900 text-white py-10 md:py-12">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Logo and Slogan -->
-        <div class="md:col-span-1">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+        <div class="sm:col-span-2 md:col-span-1">
           <div class="flex items-center mb-4">
             <span class="text-2xl font-bold text-primary-yellow">PlayMath</span>
           </div>
-          <p class="text-gray-400 mb-4">像数学家一样玩</p>
+          <p class="text-gray-400 mb-2">像数学家一样玩</p>
           <p class="text-gray-400 text-sm">
             PlayMath是一个专注于数学内容创新的品牌，通过玩中学的方式让数学内容好看好玩。
           </p>
         </div>
         
-        <!-- Quick Links -->
         <div>
           <h3 class="text-lg font-semibold mb-4 text-primary-yellow">快速链接</h3>
           <ul class="space-y-2">
@@ -26,29 +24,27 @@
           </ul>
         </div>
         
-        <!-- Contact Info -->
         <div>
           <h3 class="text-lg font-semibold mb-4 text-primary-yellow">联系方式</h3>
-          <ul class="space-y-2">
+          <ul class="space-y-3">
             <li class="flex items-center text-gray-400">
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
-              微信号：play math now
+              <span class="text-sm">微信号：play math now</span>
             </li>
             <li class="flex items-center text-gray-400">
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
-              邮箱：taobeixi@163.com
+              <span class="text-sm">邮箱：taobeixi@163.com</span>
             </li>
           </ul>
         </div>
         
-        <!-- Social Media -->
         <div>
           <h3 class="text-lg font-semibold mb-4 text-primary-yellow">关注我们</h3>
-          <div class="flex space-x-4">
+          <div class="flex flex-wrap gap-3">
             <a href="#" class="text-gray-400 hover:text-primary-yellow transition-colors">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
@@ -73,7 +69,7 @@
         </div>
       </div>
       
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+      <div class="border-t border-gray-800 mt-8 pt-6 md:pt-8 text-center text-gray-400 text-sm">
         <p>&copy; {{ new Date().getFullYear() }} PlayMath. All rights reserved.</p>
       </div>
     </div>
